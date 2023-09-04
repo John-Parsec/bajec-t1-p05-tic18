@@ -25,13 +25,18 @@ int main(void){
     cout << "4*(a + b)/(3 - 5) = " << c << endl;
 
     // outras espressões que geram resultados diferentes
-    c = 4*(a + (b/3) - 5);
-    cout << "4*(a + (b/3) - 5) = " << c << endl;
-    c = 4*(a + (b/3)) - 5;
-    cout << "(4*a) + (b/3) - 5 = " << c << endl;
-    c = 4*(a + b)/3 - 5;
-    cout << "4*a + (b/3 - 5) = " << c << endl;
+    //c = 4*(a + (b/3) - 5);
+    //cout << "4*(a + (b/3) - 5) = " << c << endl;
+    //c = 4*(a + (b/3)) - 5;
+    //cout << "4*(a + (b/3)) - 5 = " << c << endl;
+    //c = 4*(a + b)/3 - 5;
+    //cout << "4*(a + b)/3 - 5 = " << c << endl;
 
+    cout << "\n\na = " << a << endl;
+    cout << "b = " << b << endl;
+    cout << "c = " << c << endl;
+    c = (a*a) + 2*b + c;
+    cout << "a² + 2b + c = " << c << endl;
 
 
     
