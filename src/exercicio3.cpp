@@ -22,6 +22,9 @@ int main(void){
     ch3 = isupper(ch1)? 'A' : ' ';
     cout << "ch1 = " << ch1 <<" | ch3 = " << ch3 << endl;
 
+    ch3 = islower(ch2)? 'a' : ' ';
+    cout << "ch1 = " << ch1 <<" | ch3 = " << ch3 << endl;
+
     
     return 0;
 }
