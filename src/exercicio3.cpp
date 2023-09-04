@@ -19,11 +19,17 @@ int main(void){
     ch3 = ch2 -1;
     printf("Anteccessor de %c(%d): (dec)%d | (oct)%o | (hex)%X\n", ch2, ch2, ch3, ch3, ch3);
 
+    // e
     ch3 = isupper(ch1)? 'A' : ' ';
     cout << "ch1 = " << ch1 <<" | ch3 = " << ch3 << endl;
 
+    // f
     ch3 = islower(ch2)? 'a' : ' ';
-    cout << "ch1 = " << ch1 <<" | ch3 = " << ch3 << endl;
+    cout << "ch2 = " << ch2 <<" | ch3 = " << ch3 << endl;
+
+    // g
+    ch3 = (isdigit(ch2) || isdigit(ch1))? '1' : ' ';
+    cout << "ch1 = " << ch1 <<" | ch2 = " << ch2 << " | ch3 = " << ch3 << endl ;
 
     
     return 0;
