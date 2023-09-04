@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,7 +11,6 @@ int main(){
     cout << "Digite um numero inteiro: ";
     cin >> num2;
 
-    cout << ((num1 > num2)? num1 : num2) << " é maior\n";
-    
+    cout << ((num1 == num2)? "esses numeros sao iguais" : to_string((num1 > num2)? num1 : num2) + " é maior") << endl;    
     return 0;
 }
