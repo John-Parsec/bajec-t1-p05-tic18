@@ -19,7 +19,7 @@ int main()
     std::oct << int(ch3) << " - " <<
     std::hex << int(ch3) << std::dec << " - ";
 
-    int(ch3) < 33 || int(ch3) > 126 ? (std::cout << "_") : (std::cout << ch3);
+    int(ch3) < 32 || int(ch3) > 126 ? (std::cout << "_") : (std::cout << ch3);
     std::cout << std::endl;
 
     //d
@@ -27,7 +27,7 @@ int main()
     printf("%d - ", ch3);
     printf("%o - ", ch3);
     printf("%x - ", ch3);
-    int(ch3) < 33 || int(ch3) > 126 ? printf("_") : printf("%c", ch3);
+    int(ch3) < 32 || int(ch3) > 126 ? printf("_") : printf("%c", ch3);
     std::cout << std::endl;
 
     //e
