@@ -1,36 +1,35 @@
-#include <iostream>
+#include<iostream>
+#include<cstdio>
 
-using namespace std;
-
-int main(void){
+int main()
+{
     //a
     double x, y, z;
+    
+    //b
+    std::cout << "Digite o primeiro numero: ";
+    scanf("%Le", &x);
+    std::cout << "Digite o segundo numero: ";
+    scanf("%Le", &y);
 
-    // b
-    cout << "Digite um numero real: ";
-    scanf("%lf", &x);
-    cout << "Digite um numero real: ";
-    scanf("%lf", &y);
-
-    // c
+    //c
     z = x + y;
-    cout << "Soma " << x << " e "<< y << ": " << z << endl;
+    std::cout << "x + y = " << z << std::endl;
     
-    // d
-    z /= 2;
-    cout << "Media " << x << " e "<< y << ": " << z << endl;
+    //d
+    z = (x + y) / 2;
+    std::cout << "Media de x e y = " << z << std::endl;
     
-    // e
+    //e
     z = x * y;
-    cout << "Produto " << x << " e "<< y << ": " << z << endl;
+    std::cout << "x * y = " << z << std::endl;
     
-    // f
-    z = (x > y)? x : y;
-    cout << "Maior entre " << x << " e "<< y << ": " << z << endl;
+    //f
+    z = x > y ? x : y;
+    std::cout << "O maior valor e = " << z << std::endl;
     
-    // g
-    z = (z != x)? x : y;
-    cout << "Menor entre " << x << " e "<< y << ": " << z << endl;
-    
+    //g
+    z =  x < y ? x : y;
+    std::cout << "O menor valor e = " << z << std::endl;
     return 0;
 }

@@ -1,19 +1,21 @@
-#include <iostream>
+#include<iostream>
 
-using namespace std;
+int main()
+{
+    float x, y, q;
 
-int main(void){
-    double x, y;
+    std::cout << "Digite a primeira coordenada: ";
+    std::cin >> x;
+    std::cout << "Digite a segunda coordenada: ";
+    std::cin >> y;
 
-    cout << "Digite a coordena X: ";
-    cin >> x;
-    cout << "Digite a coordena Y: ";
-    cin >> y;
+    q = 
+    x > 0 && y > 0 ? 1 :
+    (x < 0 && y > 0 ? 2 :
+    (x < 0 && y < 0 ? 3 :
+    (x > 0 && y < 0 ? 4 : 0)));
 
-    cout << ((x == 0 || y == 0)? "Ponto sobre eixo": 
-            ((x > 0 && y > 0)? "Ponto no primeiro quadrante": 
-            ((x > 0)? "Ponto no quarto quadrante": 
-            ((y > 0)? "Ponto no segundo quadrante": "Ponto no terceiro quadrante"))));
-    
+    q != 0 ? (std::cout << "A coordenada esta no quadrante " << q) : 
+    (std::cout << "A coordenada esta sobre um dos eixos");
     return 0;
 }

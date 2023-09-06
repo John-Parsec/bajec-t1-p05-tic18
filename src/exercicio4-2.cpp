@@ -1,17 +1,19 @@
-#include <iostream>
-#include <cmath>
+#include<iostream>
+#include<cmath>
 
-using namespace std;
+int main()
+{
+    float r;
+    std::cout << "Digite o valor do raio da circunferencia: ";
+    std::cin >> r;
 
-int main(void){
-    double raio;
-
-    cout << "Digite o raio: ";
-    cin >> raio;
+    //a
+    std::cout << "Diametro: " << r * 2 << std::endl;
     
-    cout << "Diametro: " << 2*raio << endl;
-    cout << "Circunferencia: " << 2*M_PI*raio << endl;
-    cout << "Area: " << M_PI*raio*raio << endl;
-
-    return 0;
+    //b
+    std::cout << "Perimetro: " << r * 2 * 3.14 << std::endl;
+    
+    //c
+    std::cout << "Area: " << pow(r, 2) * 3.14 << std::endl;
+    
 }
